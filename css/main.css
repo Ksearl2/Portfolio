@@ -1,1 +1,24 @@
-/* Place CSS styles here */
+.layout {
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: auto;
+  }
+
+header {
+    background-color: aqua;
+}
+
+.hero {
+    background-color: brown;
+}
+
+.section{
+    border-radius: 100px;
+    margin: 0 auto;
+    position: relative;
+    color: blue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    hover
+}
