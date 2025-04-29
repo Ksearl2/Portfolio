@@ -1,6 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --purple: #9067c6;
-  --yellow: #ffbe0b;
+  --magenta: #ff0bca;
   --white: #fff;
   --black: #333;
   --hero-height: 100vh;
@@ -109,6 +113,7 @@ section,
 
 .second {
   padding: calc(var(--hero-height) + 10vh) 0 10vh 0;
+  margin-top: 10vh;
 }
 
 .second h2 {
@@ -126,6 +131,7 @@ section,
 }
 
 /* js */
+
 .is-sticky::before {
   content: "";
   position: fixed;
@@ -153,4 +159,28 @@ section,
 
 .is-sticky .second {
   padding-top: calc(var(--sticky-header-height) + 10vh);
+}
+
+
+/*media qeury*/
+
+@media (max-width: 900px) {
+  .first h1 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 600px) {
+  .first h1 {
+    font-size: 1.2em;
+  }
+
+  .first .nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .first .nav ul a {
+    font-size: 1em;
+  }
 }
