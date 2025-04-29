@@ -131,6 +131,47 @@ section,
   border-top: 1px solid #efefef;
 }
 
+.container {
+  padding-top: 10%;
+  padding-bottom: 20%;
+}
+
+.cover{
+  width: 50%;
+}
+
+.photos1 .photos2 .photos3 {
+  margin-left: 5%;
+}
+
+.columns {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+  overflow-y: hidden;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+}
+
+.column-reverse {
+	transform: translateY(calc(-100% + 100vh));
+	flex-direction: column-reverse;
+}
+@keyframes adjust-position {
+  from {
+		transform: translateY(calc(-100% + 100vh));
+	}
+  to {
+		transform: translateY(calc(100% - 100vh));
+	}
+}
+.column-reverse {
+	animation: adjust-position linear forwards;
+	animation-timeline: scroll(root block);
+}
+
 /* js */
 
 .is-sticky::before {
