@@ -3,15 +3,9 @@
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-columns: auto;
+    height: 10%;
   }
 
-header {
-    background-color: rgb(36, 36, 36);
-}
-
-.hero {
-    background-color: brown;
-}
 
 .section{
     border-radius: 100px;
@@ -50,4 +44,15 @@ header {
 
 .hero{
     background-image: url(../img/wall.jpg);
+    height: 160%;
+    background-size: cover; /* Make it cover the whole screen */
+    background-position: center; /* Center it nicely */
+    background-repeat: no-repeat; /* Prevent tiling */
 }
+
+h1{
+  font-size: 500%;
+  margin-top: 5%;
+  text-align: center
+}
+
