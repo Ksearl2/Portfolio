@@ -1,5 +1,5 @@
 html {
-  scroll-behavior: smooth;
+
 }
 
 :root {
@@ -138,6 +138,7 @@ section,
 
 .cover{
   width: 50%;
+  border: 5px solid rgb(0, 0, 0);
 }
 
 .photos1 .photos2 .photos3 {
