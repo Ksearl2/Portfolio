@@ -58,7 +58,7 @@ body {
 
 section,
 .first > * {
-  transition: all 0.2s;
+  transition: all 0.4s;
 }
 
 .first > * {
