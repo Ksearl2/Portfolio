@@ -1,10 +1,5 @@
-html {
-
-}
 
 :root {
-  --purple: #9067c6;
-  --magenta: #ff0bca;
   --white: #fff;
   --black: #333;
   --hero-height: 100vh;
@@ -106,7 +101,7 @@ section,
 }
 
 .first .nav ul a:hover {
-  color: var(--magenta);
+  color: var(--black);
 }
 
 /* second part*/
@@ -182,6 +177,12 @@ section,
   animation-range: entry 54% exit 90%;
 }
 
+footer{
+  background-color: #333;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+}
 /*side pages*/
 
 .sidepage{
@@ -218,7 +219,7 @@ section,
 }
 
 .navigate ul a:hover {
-  color: var(--magenta);
+  color: var(--black);
 }
 
 .ks {
@@ -261,7 +262,6 @@ section,
 
 .is-sticky .first {
   height: var(--sticky-header-height);
-  background-color: var(--purple);
 }
 
 .is-sticky .first h1 {
@@ -301,3 +301,33 @@ section,
     font-size: 1em;
   }
 }
+
+@media (max-width: 600px) {
+  .navigate {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .navigate ul a {
+    font-size: 1em;
+    padding-bottom: 20%;
+  }
+  .navigate ul {
+    display: flex;
+    list-style: none;
+    margin-right: 2%;
+    margin-top: -6%;
+  }
+
+  .cover{
+    width: 70%;
+    border: 4px solid #333;
+    
+  }
+
+  .title{
+    font-size: 11px;
+  }
+  
+}
+
