@@ -106,7 +106,7 @@ section,
 }
 
 .first .nav ul a:hover {
-  color: var(--yellow);
+  color: var(--magenta);
 }
 
 /* second part*/
@@ -128,7 +128,7 @@ section,
 .second p:last-child {
   font-size: 0.6em;
   padding-top: 20px;
-  border-top: 1px solid #efefef;
+  
 }
 
 .container {
@@ -138,11 +138,15 @@ section,
 
 .cover{
   width: 50%;
-  border: 5px solid rgb(0, 0, 0);
+  border: 7px solid #333;
+  
 }
 
-.photos1 .photos2 .photos3 {
+.photos1, .photos2, .photos3 {
   margin-left: 5%;
+  list-style-position: inside;
+  list-style: none;
+  margin-left: 20%;
 }
 
 .columns {
@@ -151,14 +155,15 @@ section,
   overflow-y: hidden;
 }
 
-.column {
+.column{
 	display: flex;
 	flex-direction: column;
 }
 
-.column-reverse {
+.column-reverse{
 	transform: translateY(calc(-100% + 100vh));
 	flex-direction: column-reverse;
+  margin-top: 90px;
 }
 @keyframes adjust-position {
   from {
@@ -168,11 +173,74 @@ section,
 		transform: translateY(calc(100% - 100vh));
 	}
 }
+
+
+
 .column-reverse {
 	animation: adjust-position linear forwards;
 	animation-timeline: scroll(root block);
+  animation-range: entry 30% exit 90%;
 }
 
+/*side pages*/
+
+.sidepage{
+  left: 0;
+  width: 100%;
+  margin-top: 0;
+  height: var(--sticky-header-height);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+  background: url(../img/wall.jpg) no-repeat center / cover;
+}
+
+.navigate{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigate ul {
+  display: flex;
+  list-style: none;
+}
+
+.navigate ul li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.navigate ul a {
+  font-size: 1.2em;
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.navigate ul a:hover {
+  color: var(--magenta);
+}
+
+.ks {
+  padding: left 5%
+}
+
+.display{
+  width: 30%;;
+  border: 7px solid #333;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+p{
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.db{
+  text-align: center;
+}
 /* js */
 
 .is-sticky::before {
