@@ -296,7 +296,7 @@ label {
   display: block;
   margin-bottom: 5px;
   color: #333;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: "Josefin Sans", 'Arial Narrow Bold', sans-serif;
  }
 input, select, textarea {
   width: 100%;
@@ -311,7 +311,7 @@ button {
   border: none;
   cursor: pointer;
   border-radius: 100px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: "Josefin Sans", 'Arial Narrow Bold', sans-serif;
 }
 .error {
   color: red;
