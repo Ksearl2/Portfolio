@@ -17,7 +17,7 @@ a {
 }
 
 body {
-  font: 25px/1.5 arial, sans-serif;
+  font: 25px/1.5 "Josefin Sans", sans-serif;
 }
 
 .container {
@@ -317,6 +317,31 @@ button {
   color: red;
 }
 
+/*about me*/
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+  padding: 2rem;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.resume img.display {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cv{
+  width: 70%;;
+  border: 7px solid #333
+}
 /*media qeury*/
 
 @media (max-width: 900px) {
